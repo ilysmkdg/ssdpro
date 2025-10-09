@@ -148,8 +148,7 @@ function renderProducts() {
     productGrid.innerHTML = productHTML;
 }
 
-// Initial render and SEO data injection
-document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
-    generateStructuredData();
-});
+// Initial render and SEO data injection.
+// The script is loaded as a module at the end of the <body>, which ensures the DOM is ready.
+renderProducts();
+generateStructuredData();
